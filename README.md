@@ -1,5 +1,6 @@
-# Getting Started with Create React App
+# Expense tracker UI
 
+Front end to use the expense-tracker service (https://github.com/HariCazorla/expense-tracker).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
