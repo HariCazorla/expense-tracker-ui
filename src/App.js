@@ -1,12 +1,24 @@
-import "./App.css";
+import React from "react";
+import Navbar from "./Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Expenses from "./Expenses";
+import Categories from "./Categories";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Let's track your expenses</h1>
-      </header>
-    </div>
+    <React.Fragment>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Expenses />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </Switch>
+      </Router>
+    </React.Fragment>
   );
 }
 
