@@ -16,9 +16,26 @@ function Categories() {
       });
   }, []);
   return (
-    <div>
-      <h1>Categories</h1>
-    </div>
+    <React.Fragment>
+      <ul className="categories">
+        {categories.map((category) => {
+          const { id, name, description } = category;
+          return (
+            <li key={id}>
+              <div>
+                <h3>{name}</h3>
+                <p>{description}</p>
+              </div>
+            </li>
+          );
+        })}
+        <li>
+          <button type="button" onClick={() => alert("coming soon!")}>
+            Add new catergoy
+          </button>
+        </li>
+      </ul>
+    </React.Fragment>
   );
 }
 
