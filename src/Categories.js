@@ -17,7 +17,7 @@ function Categories() {
   }, []);
   return (
     <React.Fragment>
-      <ul className="categories">
+      <ul className="item">
         {categories.map((category) => {
           const { id, name, description } = category;
           return (
